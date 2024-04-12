@@ -21,12 +21,13 @@ const Card = ({
               className="form-select form-select-sm filter-dropDown"
               value={state}
               aria-label="Small select example"
+              style={{ backgroundColor: state ? "green" : "red" }}
               onChange={() => {
                 handleState(id);
               }}
             >
-              <option value={false}>Not Completed</option>
-              <option value={true}>Completed</option>
+              <option value={false} style={{ backgroundColor: "#0dcaf0" }}>Not Completed</option>
+              <option value={true} style={{ backgroundColor: "#0dcaf0" }} >Completed</option>
             </select>
           </div>
         </div>

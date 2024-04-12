@@ -128,7 +128,7 @@ const Form = ({ handleChange, handleSubmit, formData }) => {
                 name="name"
                 value={formData.name || ""}
                 placeholder="TODO Name"
-                aria-label="First name"
+                aria-label="task-name"
                 onChange={handleChange}
                 required
               />
@@ -140,7 +140,7 @@ const Form = ({ handleChange, handleSubmit, formData }) => {
                 name="description"
                 value={formData.description || ""}
                 placeholder="TODO Description"
-                aria-label="Last name"
+                aria-label="task-description"
                 onChange={handleChange}
                 required
               />
