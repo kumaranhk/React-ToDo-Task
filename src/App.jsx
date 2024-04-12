@@ -12,7 +12,6 @@ function App() {
   const handleState = (taskId) => {
     const updatedTasks = tasks.map((task) => {
       if (task.id === taskId) {
-      console.log(task);
         return {
           ...task,
           state: !task.state,
@@ -41,7 +40,6 @@ function App() {
     const tempTask = { ...formData };
     tempTask.id = Date.now();
     tempTask.state = state;
-    console.log(state, tempTask);
     setTask([tempTask, ...tasks]);
   };
 
@@ -54,7 +52,6 @@ function App() {
 
   const editTask = (taskId) => {
     const taskData = tasks.find((task) => task.id === taskId);
-    console.log(taskData);
     setFormData(taskData);
   };
 
